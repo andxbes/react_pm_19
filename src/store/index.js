@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 
-const counterREducer = (state = 0, action) => {
+const counterREducer = (state = { counter: 0 }, action) => {
     if (action === 'increment') {
         return {
             counter: state.counter + 1
